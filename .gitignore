@@ -9,9 +9,7 @@ myvenv/
 venv/
 
 # Static folder at project root
-/static/
 
-portfolio/settings.py
 
 
 

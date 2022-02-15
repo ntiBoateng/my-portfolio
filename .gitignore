@@ -11,7 +11,7 @@ venv/
 # Static folder at project root
 /static/
 
-/portfolio/settings.py
+portfolio/settings.py
 
 
 

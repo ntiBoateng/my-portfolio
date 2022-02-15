@@ -13,11 +13,5 @@ venv/
 
 /portfolio/settings.py
 
-# macOS
-._*
-.DS_Store
-.fseventsd
-.Spotlight-V100
 
-# pycharm
-.idea/
+

@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
-
+import django_heroku
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-!y9#5tl^b7gg+1xnvo!+!ucpuvaltcdn9*h_pw4p*(s8$8)009
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,6 +126,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root/')
 STATIC_ROOT=os.path.join(BASE_DIR,'static_root/')
 
 STATICFILES_DIR=[BASE_DIR / "static"]
+
+django_heroku.settings(locals)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
